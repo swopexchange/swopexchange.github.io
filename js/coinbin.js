@@ -2,9 +2,9 @@ $(document).ready(function() {
 
 	/* open wallet code */
 
-	var explorer_tx = "https://coinb.in/tx/"
+	var explorer_tx = "https://www.blockchain.com/btc/tx/"
 	var explorer_addr = "https://www.blockchain.com/btc/address/"
-	var explorer_block = "https://coinb.in/block/"
+	var explorer_block = "https://www.blockchain.com/btc/block/"
 
 	var wallet_timer = false;
 
