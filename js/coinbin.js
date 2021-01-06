@@ -199,7 +199,7 @@ $(document).ready(function() {
 
 				tx2.broadcast(function(data){
 					if($(data).find("result").text()=="1"){
-						$("#walletSendConfirmStatus").removeClass('hidden').addClass('alert-success').html('txid: <a href="https://coinb.in/tx/'+$(data).find("txid").text()+'" target="_blank">'+$(data).find("txid").text()+'</a>');
+						$("#walletSendConfirmStatus").removeClass('hidden').addClass('alert-success').html('txid: <a href="https://www.blockchain.com/btc/tx/'+$(data).find("txid").text()+'" target="_blank">'+$(data).find("txid").text()+'</a>');
 					} else {
 						$("#walletSendConfirmStatus").removeClass('hidden').addClass('alert-danger').html(unescape($(data).find("response").text()).replace(/\+/g,' '));
 						$("#walletSendFailTransaction").removeClass('hidden');
@@ -1339,7 +1339,7 @@ $(document).ready(function() {
                         success: function(data) {
 				$("#rawTransactionStatus").html(unescape($(data).find("response").text()).replace(/\+/g,' ')).removeClass('hidden');
 				if($(data).find("result").text()==1){
-					$("#rawTransactionStatus").addClass('alert-success').removeClass('alert-danger').removeClass("hidden").html(' TXID: ' + $(data).find("txid").text() + '<br> <a href="https://coinb.in/tx/' + $(data).find("txid").text() + '" target="_blank">View on Blockchain</a>');
+					$("#rawTransactionStatus").addClass('alert-success').removeClass('alert-danger').removeClass("hidden").html(' TXID: ' + $(data).find("txid").text() + '<br> <a href="https://www.blockchain.com/btc/tx/' + $(data).find("txid").text() + '" target="_blank">View on Blockchain</a>');
 				} else {
 					$("#rawTransactionStatus").addClass('alert-danger').removeClass('alert-success').prepend('<span class="glyphicon glyphicon-exclamation-sign"></span> ');
 				}
@@ -2245,7 +2245,7 @@ $(document).ready(function() {
 				$("#fees .recommended .blockHash").html($(data).find("block").text());
 				$("#fees .recommended .blockTime").html($(data).find("timestamp").text());
 				$("#fees .recommended .blockDateTime").html(unescape($(data).find("datetime").text()).replace(/\+/g,' '));
-				$("#fees .recommended .txId").html('<a href="https://coinb.in/tx/'+$(data).find("txid").text()+'" target="_blank">'+$(data).find("txid").text()+'</a>');
+				$("#fees .recommended .txId").html('<a href="https://www.blockchain.com/btc/tx/'+$(data).find("txid").text()+'" target="_blank">'+$(data).find("txid").text()+'</a>');
 				$("#fees .recommended .txSize").html($(data).find("txsize").text());
 				$("#fees .recommended .txFee").html($(data).find("txfee").text());
 				$("#fees .feeSatByte").html($(data).find("satbyte").text());
