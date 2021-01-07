@@ -19,7 +19,7 @@
 	coinjs.compressed = false;
 
 	/* other vars */
-	coinjs.developer = '15UKeYWvJeDr2eC4RSnWZ2pkW7e9BPthk'; //bitcoin
+	coinjs.developer = '15UKeYWvJeDr2eC4RSnWZ2pkW7e9BPthk6'; //bitcoin
 
 	/* bit(coinb.in) api vars */
 	coinjs.hostname	= ((document.location.hostname.split(".")[(document.location.hostname.split(".")).length-1]) == 'onion') ? '4zpinp6gdkjfplhk.onion' : 'coinb.in';
